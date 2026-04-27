@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Екскурсія по садочку</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ── Splash ─────────────────────────────────────────────────────────── -->
+  <div id="splash-screen">
+    <div class="splash-bg"></div>
+    <div class="splash-content">
+      <div class="splash-icon">🏫</div>
+      <h1 class="splash-title">Ласкаво просимо до<br><span>нашого садочку</span></h1>
+      <p class="splash-subtitle">Оберіть напрямок для екскурсії</p>
+      <div class="splash-loader"><div class="loader-bar"></div></div>
+    </div>
+    <div class="splash-bubbles">
+      <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+      <div class="bubble"></div><div class="bubble"></div>
+    </div>
+  </div>
+
+  <!-- ── Map screen ────────────────────────────────────────────────────── -->
+  <div id="map-screen" class="screen">
+    <div id="map-container">
+      <img id="map-image" src="map.png" alt="Карта садочку" draggable="false">
+      <div id="map-hotspots"></div>
+    </div>
+    <div id="map-title">Оберіть напрямок</div>
+  </div>
+
+  <!-- ── Video screen ───────────────────────────────────────────────────── -->
+  <div id="video-screen" class="screen">
+    <video id="tour-video" playsinline webkit-playsinline>
+      <source id="video-src" src="" type="video/mp4">
+    </video>
+    <div id="video-label"></div>
+    <div id="video-tap-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+      </svg>
+      Торкніться для відтворення
+    </div>
+    <button id="video-back-btn" class="back-btn" aria-label="На головну">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ── Photo screen ───────────────────────────────────────────────────── -->
+  <div id="photo-screen" class="screen">
+    <div id="photo-container">
+      <img id="tour-photo" src="" alt="Фото" draggable="false">
+      <button id="hotspot" aria-label="Перейти до наступного кроку">
+        <div class="hotspot-ring"></div>
+        <div class="hotspot-ring hotspot-ring--2"></div>
+        <div class="hotspot-inner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div id="progress">
+      <div id="progress-track"><div id="progress-fill"></div></div>
+      <div id="progress-dots"></div>
+      <div id="progress-label"></div>
+    </div>
+    <button id="photo-back-btn" class="back-btn" aria-label="На головну">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ── Complete screen ────────────────────────────────────────────────── -->
+  <div id="complete-screen" class="screen">
+    <video id="outro-video" playsinline webkit-playsinline>
+      <source id="outro-src" src="" type="video/mp4">
+    </video>
+    <div id="complete-overlay">
+      <div class="complete-icon">🎉</div>
+      <h2 class="complete-title">Ви прибули!</h2>
+      <p class="complete-sub">Дякуємо за знайомство з нашим садочком</p>
+      <button id="home-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+             stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        На головну
+      </button>
+    </div>
+  </div>
+
+  <!-- ── Transition overlay ─────────────────────────────────────────────── -->
+  <div id="transition-overlay"></div>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
