@@ -23,14 +23,15 @@
       "id": "vhid1",
       "label": "Вхід 2",
       "hotspot": { "x": 19, "y": 52 },
-      "introVideo": "tour2/video/intro.mp4",
+      "introVideo": "tour4/video/intro.mp4",
       "outroVideo": "",
       "photos": [
-        { "src": "tour2/photo/1.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour2/photo/2.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour2/photo/3.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour2/photo/4.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour2/photo/5.jpg", "hotspot": { "x": 50, "y": 75 } }
+        { "src": "tour4/photo/1.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour4/photo/2.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour4/photo/3.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour4/photo/4.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour4/photo/5.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour4/photo/6.jpg", "hotspot": { "x": 50, "y": 75 } }
       ]
     },
     {
@@ -54,15 +55,14 @@
       "id": "vhid3",
       "label": "Вхід 3",
       "hotspot": { "x": 81, "y": 52 },
-      "introVideo": "tour4/video/intro.mp4",
+      "introVideo": "tour2/video/intro.mp4",
       "outroVideo": "",
       "photos": [
-        { "src": "tour4/photo/1.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour4/photo/2.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour4/photo/3.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour4/photo/4.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour4/photo/5.jpg", "hotspot": { "x": 50, "y": 75 } },
-        { "src": "tour4/photo/6.jpg", "hotspot": { "x": 50, "y": 75 } }
+        { "src": "tour2/photo/1.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour2/photo/2.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour2/photo/3.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour2/photo/4.jpg", "hotspot": { "x": 50, "y": 75 } },
+        { "src": "tour2/photo/5.jpg", "hotspot": { "x": 50, "y": 75 } }
       ]
     }
   ]
