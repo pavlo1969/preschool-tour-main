@@ -22,7 +22,7 @@
     {
       "id": "vhid1",
       "label": "Вхід 1",
-      "hotspot": { "x": 50, "y": 60 },
+      "hotspot": { "x": 19, "y": 52 },
       "introVideo": "tour2/video/intro.mp4",
       "outroVideo": "",
       "photos": [
@@ -36,7 +36,7 @@
     {
       "id": "vhid2",
       "label": "Вхід 2",
-      "hotspot": { "x": 19, "y": 52 },
+      "hotspot": { "x": 81, "y": 52 },
       "introVideo": "tour3/video/intro.mp4",
       "outroVideo": "",
       "photos": [
@@ -53,7 +53,7 @@
     {
       "id": "vhid3",
       "label": "Вхід 3",
-      "hotspot": { "x": 81, "y": 52 },
+      "hotspot": { "x": 50, "y": 60 },
       "introVideo": "tour4/video/intro.mp4",
       "outroVideo": "",
       "photos": [
